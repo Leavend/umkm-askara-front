@@ -159,8 +159,8 @@ export default function CartPage() {
         <Center>
           <ColumnsWrapper>
             <Box>
-              <h1>Thanks for your order!</h1>
-              <p>We will email you when your order will be sent.</p>
+              <h1>Terima Kasih atas pesanan anda</h1>
+              <p>Kami akan email ketika produk di kirimkan</p>
             </Box>
           </ColumnsWrapper>
         </Center>
@@ -176,15 +176,15 @@ export default function CartPage() {
             <Box>
               <h2>Cart</h2>
               {!cartProducts?.length && (
-                <div>Your cart is empty</div>
+                <div>Keranjang mu masih kosong</div>
               )}
               {products?.length > 0 && (
                 <Table>
                   <thead>
                   <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
+                    <th>Produk</th>
+                    <th>Kuantitas</th>
+                    <th>Harga</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -211,11 +211,11 @@ export default function CartPage() {
                     </tr>
                   ))}
                   <tr className="subtotal">
-                    <td colSpan={2}>Products</td>
+                    <td colSpan={2}>Produk</td>
                     <td>Rp.{productsTotal}</td>
                   </tr>
                   <tr className="subtotal">
-                    <td colSpan={2}>Shipping</td>
+                    <td colSpan={2}>Pengiriman</td>
                     <td>Rp.{shippingFee}</td>
                   </tr>
                   <tr className="subtotal total">
@@ -265,7 +265,7 @@ export default function CartPage() {
                        onChange={ev => setCountry(ev.target.value)}/>
                 <Button black block
                         onClick={goToPayment}>
-                  Continue to payment
+                  Lanjut untuk Pembayaran
                 </Button>
               </Box>
             </RevealWrapper>
