@@ -92,7 +92,7 @@ export default function Header() {
         <Wrapper>
           <Logo href={'/'}>UMKM Gn. Samarinda Baru</Logo>
           <StyledNav mobileNavActive={mobileNavActive}>
-            <NavLink href={'/'}>Home</NavLink>
+            <NavLink href={'/'}>UMKM</NavLink>
             <NavLink href={'/products'}>Semua Produk</NavLink>
             <NavLink href={'/categories'}>Kategori</NavLink>
             <NavLink href={'/account'}>Akun</NavLink>
