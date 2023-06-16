@@ -122,7 +122,7 @@ export default function ProductBox({
           <Price>
             Rp.{price}
           </Price>
-          <FlyingButton _id={_id} src={images?.[0]}>Tambahkan ke Keranjang</FlyingButton>
+          <FlyingButton _id={_id} src={images?.[0]}>Beli Sekarang</FlyingButton>
         </PriceRow>
       </ProductInfoBox>
     </ProductWrapper>
