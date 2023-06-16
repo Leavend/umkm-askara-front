@@ -113,7 +113,7 @@ export default function AccountPage() {
                     {orderLoaded && (
                       <div>
                         {orders.length === 0 && (
-                          <p>Login to see your orders</p>
+                          <p>Login Akun untuk lihat pesanan kamu</p>
                         )}
                         {orders.length > 0 && orders.map(o => (
                           <SingleOrder key={o._id} {...o} />
@@ -137,10 +137,10 @@ export default function AccountPage() {
                         {wishedProducts.length === 0 && (
                           <>
                             {session && (
-                              <p>Your wishlist is empty</p>
+                              <p>Produk Favorit mu masih kosong nih...</p>
                             )}
                             {!session && (
-                              <p>Login to add products to your wishlist</p>
+                              <p>Login akun untuk menambahkan Produk Favorit</p>
                             )}
                           </>
                         )}
