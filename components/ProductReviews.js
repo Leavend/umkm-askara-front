@@ -79,11 +79,11 @@ export default function ProductReviews({product}) {
   }
   return (
     <div>
-      <Title>Reviews</Title>
+      <Title>Review Produk</Title>
       <ColsWrapper>
         <div>
           <WhiteBox>
-            <Subtitle>Add a review</Subtitle>
+            <Subtitle>Tambah Komentar</Subtitle>
             <div>
               <StarsRating onChange={setStars} />
             </div>
@@ -96,13 +96,13 @@ export default function ProductReviews({product}) {
               onChange={ev => setDescription(ev.target.value)}
               placeholder="Was it good? Pros? Cons?" />
             <div>
-              <Button primary onClick={submitReview}>Submit your review</Button>
+              <Button primary onClick={submitReview}>Submit review kamu</Button>
             </div>
           </WhiteBox>
         </div>
         <div>
           <WhiteBox>
-            <Subtitle>All reviews</Subtitle>
+            <Subtitle>Semua Review</Subtitle>
             {reviewsLoading && (
               <Spinner fullWidth={true} />
             )}
