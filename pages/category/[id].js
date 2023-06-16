@@ -105,10 +105,10 @@ export default function CategoryPage({
                   setSort(ev.target.value);
                   setFiltersChanged(true);
                 }}>
-                <option value="price-asc">price, lowest first</option>
-                <option value="price-desc">price, highest first</option>
-                <option value="_id-desc">newest first</option>
-                <option value="_id-asc">oldest first</option>
+                <option value="price-asc">Harga Terendah</option>
+                <option value="price-desc">Harga Tertinggi</option>
+                <option value="_id-desc">Terbaru</option>
+                <option value="_id-asc">Terbaik</option>
               </select>
             </Filter>
           </FiltersWrapper>
@@ -122,7 +122,7 @@ export default function CategoryPage({
               <ProductsGrid products={products} />
             )}
             {products.length === 0 && (
-              <div>Sorry, no products found</div>
+              <div>Maaf, Produk tidak di temukan</div>
             )}
           </div>
         )}
