@@ -90,13 +90,13 @@ export default function Header() {
     <StyledHeader>
       <Center>
         <Wrapper>
-          <Logo href={'/'}>UMKM Kelurahan Gunung Samarinda Baru</Logo>
+          <Logo href={'/'}>UMKM Gn. Samarinda Baru</Logo>
           <StyledNav mobileNavActive={mobileNavActive}>
             <NavLink href={'/'}>Home</NavLink>
-            <NavLink href={'/products'}>All products</NavLink>
-            <NavLink href={'/categories'}>Categories</NavLink>
-            <NavLink href={'/account'}>Account</NavLink>
-            <NavLink href={'/cart'}>Cart ({cartProducts.length})</NavLink>
+            <NavLink href={'/products'}>Semua Produk</NavLink>
+            <NavLink href={'/categories'}>Kategori</NavLink>
+            <NavLink href={'/account'}>Akun</NavLink>
+            <NavLink href={'/cart'}>Keranjang ({cartProducts.length})</NavLink>
           </StyledNav>
           <SideIcons>
             <Link href={'/search'}><SearchIcon /></Link>
